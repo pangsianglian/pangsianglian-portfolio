@@ -56,3 +56,51 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+
+/* Sticky Navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+  padding: 0.5rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  font-size: 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0b3d91;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section spacing */
+section {
+  padding: 3rem 0;
+}
+
+/* Connect section styles */
+.connect a {
+  color: #0b3d91;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.connect a:hover {
+  text-decoration: underline;
+}
