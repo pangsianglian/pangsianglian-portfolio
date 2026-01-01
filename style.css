@@ -123,15 +123,25 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/* ---------- Navbar (Sticky) ---------- */
-.navbar {
+/* ---------- Navbar (slim + centered) ---------- */
+.navbar{
   position: sticky;
   top: 0;
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
   z-index: 1000;
-  padding: 0.65rem 0;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
 }
+
+.navbar .container{
+  /* slim height */
+  padding: 0.7rem 0;
+  display: flex;
+  justify-content: center;     /* centered links */
+  align-items: center;
+  gap: 1.4rem;
+}
+
 
 .navbar a {
   text-decoration: none;
