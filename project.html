@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cashflow Analytics & ML Automation | Pang Siang Lian</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-wrap">
+      <a href="index.html#about">About</a>
+      <a href="project.html" class="active">Project</a>
+      <a href="index.html#vision">Vision</a>
+      <a href="index.html#connect">Connect</a>
+    </div>
+  </nav>
+
+  <header class="subheader">
+    <div class="container">
+      <h1>Cashflow Analytics & ML Automation</h1>
+      <p>From Invisible Cashflows → Single Source of Truth → Human-in-the-Loop ML</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- 0) Quick Summary -->
+    <section class="project-page">
+      <div class="container">
+        <h2>Project Overview</h2>
+        <p>
+          During my internship at <strong>Tzu Chi Foundation Singapore</strong>, I built an end-to-end pipeline
+          that ingests bank + payment gateway data, curates it in SQL, and delivers daily cash visibility via Power BI.
+          On top of the pipeline, I added a <strong>human-in-the-loop ML classifier</strong> to auto-label transactions,
+          reducing manual reconciliation effort while keeping control, auditability, and safe review flows.
+        </p>
+
+        <!-- Optional diagram -->
+        <img src="assets/gdipsa_diagram.png" alt="Project Diagram" class="diagram">
+      </div>
+    </section>
+
+    <!-- 1) Before vs After -->
+    <section class="before-after">
+      <div class="container">
+        <h2>Before vs After</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Before</h3>
+            <ul>
+              <li>Cash position visibility arrived late</li>
+              <li>Multiple files, inconsistent formats</li>
+              <li>Manual reconciliation, high effort</li>
+              <li>Knowledge lived in people, not systems</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>After</h3>
+            <ul>
+              <li>Daily cash visibility in Power BI</li>
+              <li>Standardised SQL curated tables</li>
+              <li>ML-assisted labeling with review queue</li>
+              <li>Designed for handover & scaling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) Story Flow -->
+    <section class="story-flow">
+      <div class="container">
+        <h2>The Story (4 Steps)</h2>
+
+        <div class="flow">
+          <div class="step">
+            <div class="badge">1</div>
+            <h3>Problem</h3>
+            <p>Cashflows existed — but operational clarity came too late.</p>
+          </div>
+
+          <div class="arrow">→</div>
+
+          <div class="step">
+            <div class="badge">2</div>
+            <h3>Visibility</h3>
+            <p>Automated ingestion + SQL curation + dashboards = single source of truth.</p>
+          </div>
+
+          <div class="arrow">→</div>
+
+          <div class="step">
+            <div class="badge">3</div>
+            <h3>Intelligence</h3>
+            <p>Human-in-the-loop ML: auto-label when confident, flag for review when unsure.</p>
+          </div>
+
+          <div class="arrow">→</div>
+
+          <div class="step">
+            <div class="badge">4</div>
+            <h3>Impact</h3>
+            <p>Less manual work, faster reconciliation, better decisions, sustainable design.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) What I Built (high-level) -->
+    <section class="built">
+      <div class="container">
+        <h2>What I Built</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Data & Systems</h3>
+            <ul>
+              <li>Bank + gateway ingestion pipeline</li>
+              <li>SQL staging + curated tables</li>
+              <li>Power BI dashboards for daily operations</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>ML & Operations</h3>
+            <ul>
+              <li>Transaction classification model</li>
+              <li>Confidence-based automation rules</li>
+              <li>Review workflow + auditability</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) Reflection -->
+    <section class="reflection">
+      <div class="container">
+        <h2>What I Learned</h2>
+        <ul>
+          <li>Finance problems become data problems — and then system design problems.</li>
+          <li>ML works only when embedded into real workflows people trust.</li>
+          <li>Maintainability and handover matter as much as model accuracy.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Pang Siang Lian</p>
+    </div>
+  </footer>
+</body>
+</html>
