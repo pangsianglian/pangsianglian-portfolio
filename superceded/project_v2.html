@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>End-to-End Cashflow Analytics & Risk Alerting Platform | Pang Siang Lian</title>
+  <meta name="description" content="End-to-end cashflow data platform: Excel ingestion → SQL curation → Power BI dashboards, automated bank transaction auto-remark, ML low-balance risk detection, and email alerting to Finance users." />
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <!-- Navigation Bar (keep lightweight; let CSS decide fixed vs non-fixed) -->
+  <nav class="navbar navbar--center">
+    <div class="container nav-wrap nav-wrap--center">
+      <a href="index.html#about">About</a>
+      <a href="project.html" class="active">Project</a>
+      <a href="index.html#vision">Vision</a>
+      <a href="index.html#connect">Connect</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="subheader project-hero">
+    <div class="container">
+      <h1>End-to-End Cashflow Analytics & Risk Alerting Platform</h1>
+      <p class="subtitle">
+        Excel ingestion → SQL curation → Power BI visibility → Automated reconciliation →
+        ML-driven low-balance risk detection → Email alerts to Finance users
+      </p>
+
+      <div class="hero-chips" aria-label="Project highlights">
+        <span class="chip">Data Ingestion</span>
+        <span class="chip">SQL ETL</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Auto-Remark</span>
+        <span class="chip">ML Risk Detection</span>
+        <span class="chip">Email Alerting</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 0) Executive Summary -->
+    <section class="project-page">
+      <div class="container">
+        <h2>Executive Summary</h2>
+        <p>
+          During my internship at <strong>Tzu Chi Foundation Singapore</strong>, I built a production-oriented
+          cashflow intelligence system that transforms fragmented financial files into a reliable, daily operational view.
+          The solution ingests Excel-based inputs into <strong>SQL</strong>, runs a curated <strong>ETL pipeline</strong>,
+          delivers <strong>Power BI dashboards</strong> for daily cash visibility, and automates bank statement
+          <strong>auto-remark</strong> with a safe, auditable workflow.
+        </p>
+        <p>
+          On top of the data foundation, I implemented a <strong>low-balance risk detection</strong> module with
+          <strong>ML-assisted logic</strong> and an <strong>email alerting system</strong> to notify Finance users early,
+          enabling faster response and better cash planning.
+        </p>
+
+        <!-- Optional diagram -->
+        <figure class="figure">
+          <img src="assets/gdipsa_diagram.png" alt="High-level architecture diagram" class="diagram">
+          <figcaption>High-level workflow: Ingest → Curate → Visualize → Automate → Detect Risk → Alert</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 1) Problem + Outcome -->
+    <section class="before-after">
+      <div class="container">
+        <h2>Before vs After</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Before</h3>
+            <ul>
+              <li>Cash visibility arrived late and required manual consolidation</li>
+              <li>Multiple spreadsheets with inconsistent formats and naming</li>
+              <li>Manual reconciliation was time-consuming and error-prone</li>
+              <li>Operational knowledge lived in people, not in a system</li>
+              <li>No consistent early-warning for low-balance situations</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>After</h3>
+            <ul>
+              <li>Daily operational visibility in Power BI dashboards</li>
+              <li>Standardized SQL staging + curated tables as source of truth</li>
+              <li>Automated auto-remark workflow for bank statement transactions</li>
+              <li>Designed for auditability, handover, and maintainable operations</li>
+              <li>Low-balance risk detection + email alerts to Finance users</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2) What I Built (Modules) -->
+    <section class="built">
+      <div class="container">
+        <h2>What I Built</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Data Foundation</h3>
+            <ul>
+              <li><strong>Excel → SQL ingestion</strong> (validated and standardized)</li>
+              <li><strong>SQL ETL pipeline</strong>: staging → curated tables</li>
+              <li><strong>Data quality checks</strong>: schema, completeness, anomalies</li>
+              <li><strong>Traceability</strong>: deterministic processing + logs</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>BI & User Experience</h3>
+            <ul>
+              <li><strong>Power BI dashboards</strong> for daily cash visibility</li>
+              <li><strong>Dashboard usability review</strong>: clarity, filters, user workflow</li>
+              <li><strong>Operational views</strong> for Finance decision-making</li>
+              <li><strong>Reusable dataset model</strong> for future enhancements</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Reconciliation Automation</h3>
+            <ul>
+              <li><strong>Auto-remark</strong> for bank statement transactions</li>
+              <li><strong>Human-in-the-loop</strong>: review queue for uncertain cases</li>
+              <li><strong>Auditability</strong>: rule/model decisions are traceable</li>
+              <li><strong>Operationalization</strong>: repeatable daily run process</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Risk Detection & Alerting</h3>
+            <ul>
+              <li><strong>Low-balance risk detection</strong> (threshold + model-assisted signals)</li>
+              <li><strong>Email alerts</strong> to Finance users with actionable context</li>
+              <li><strong>Alert hygiene</strong>: deduplication / cooldown / severity tiers</li>
+              <li><strong>Extensible design</strong> for additional risk rules and models</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3) End-to-End Flow -->
+    <section id="story">
+      <div class="container">
+        <h2>End-to-End Flow</h2>
+
+        <div class="story-steps">
+          <div class="story-card">
+            <div class="story-badge">1</div>
+            <h3>Ingest</h3>
+            <p>Collect Excel inputs and standardize formats. Load into SQL staging with validation.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-badge">2</div>
+            <h3>Curate</h3>
+            <p>Transform staging data into curated tables for consistency, joins, and downstream reporting.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-badge">3</div>
+            <h3>Visualize</h3>
+            <p>Power BI dashboards provide daily cash visibility and operational drill-down for Finance users.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-badge">4</div>
+            <h3>Automate</h3>
+            <p>Auto-remark workflow reduces manual reconciliation while keeping review and audit trails.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-badge">5</div>
+            <h3>Detect</h3>
+            <p>Low-balance risk detection identifies early-warning signals using rules + ML-assisted logic.</p>
+          </div>
+
+          <div class="story-card">
+            <div class="story-badge">6</div>
+            <h3>Alert</h3>
+            <p>Email alerts notify Finance users with context, severity, and recommended next actions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4) Architecture (Readable, non-technical stakeholders friendly) -->
+    <section class="architecture">
+      <div class="container">
+        <h2>Architecture at a Glance</h2>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Core Components</h3>
+            <ul>
+              <li><strong>Input layer:</strong> Excel / statements</li>
+              <li><strong>Data layer:</strong> SQL staging + curated schemas</li>
+              <li><strong>Processing layer:</strong> ETL jobs + automation scripts</li>
+              <li><strong>Analytics layer:</strong> Power BI datasets + dashboards</li>
+              <li><strong>Intelligence layer:</strong> auto-remark + low-balance risk module</li>
+              <li><strong>Notification layer:</strong> email alerts to Finance users</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Design Principles</h3>
+            <ul>
+              <li><strong>Reliability:</strong> repeatable runs and observable logs</li>
+              <li><strong>Auditability:</strong> traceable decisions (rules/ML)</li>
+              <li><strong>Human-in-the-loop:</strong> automation with safe review points</li>
+              <li><strong>Maintainability:</strong> modular pipeline, clear handover paths</li>
+              <li><strong>Scalability:</strong> extend tables, rules, and models as needs grow</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5) Impact (Leave placeholders if you don't want numbers) -->
+    <section class="impact">
+      <div class="container">
+        <h2>Impact</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Operational Outcomes</h3>
+            <ul>
+              <li>Faster daily cash visibility for Finance operations</li>
+              <li>Reduced manual reconciliation effort via auto-remark</li>
+              <li>Improved consistency through SQL-curated source of truth</li>
+              <li>Clearer handover and sustainability for future maintainers</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Risk & Controls</h3>
+            <ul>
+              <li>Earlier identification of low-balance risk situations</li>
+              <li>Email alerts enable timely actions and follow-ups</li>
+              <li>Review workflow for uncertain cases to prevent silent errors</li>
+              <li>Audit-friendly design for finance governance needs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6) Tech Stack -->
+    <section class="tech">
+      <div class="container">
+        <h2>Tech Stack</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Data</h3>
+            <ul>
+              <li>Excel inputs</li>
+              <li>SQL (staging + curated tables)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Processing</h3>
+            <ul>
+              <li>ETL scripts / automation jobs</li>
+              <li>Logging + operational run steps</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Analytics & Alerting</h3>
+            <ul>
+              <li>Power BI dashboards</li>
+              <li>ML-assisted risk detection</li>
+              <li>Email notifications to Finance users</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7) Reflection -->
+    <section class="reflection">
+      <div class="container">
+        <h2>Key Lessons</h2>
+        <ul>
+          <li>Finance problems become data problems — then become system design problems.</li>
+          <li>Automation only works when users trust the workflow and controls are built in.</li>
+          <li>ML value is realized when embedded into operations with review and auditability.</li>
+          <li>Handover-ready engineering matters as much as correctness.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 8) Call to Action -->
+    <section class="cta">
+      <div class="container cta-box">
+        <h2>Want to Collaborate or Learn More?</h2>
+        <p>
+          If you’re building finance automation, operational dashboards, or ML-in-the-loop workflows,
+          I’d love to connect and share what I learned.
+        </p>
+        <div class="cta-actions">
+          <a class="btn" href="index.html#connect">Connect</a>
+          <a class="btn btn-ghost" href="index.html#about">Back to About</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Pang Siang Lian</p>
+    </div>
+  </footer>
+</body>
+</html>
