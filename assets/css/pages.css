@@ -1,0 +1,32 @@
+.hero { overflow: hidden; padding: clamp(5rem, 10vw, 8.5rem) 0; background: radial-gradient(circle at 85% 20%, #dceaff 0, transparent 31%), linear-gradient(135deg, #f8fbff, #eef5ff 48%, #ffffff); }
+.hero-grid { display: grid; grid-template-columns: 1.35fr .65fr; align-items: center; gap: 3rem; }
+.hero h1 span { color: var(--brand-700); }
+.hero-panel { padding: 1.5rem; background: rgba(255,255,255,.86); border: 1px solid #cdddf2; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+.hero-panel ul { margin-bottom: 0; }
+
+.value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.value-block { padding: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius-md); background: white; }
+.value-block h3 { color: var(--brand-900); }
+
+.project-hero { padding: 4.5rem 0 3.5rem; background: linear-gradient(145deg, #082b66, #0b3d91 60%, #1f66cc); color: white; }
+.project-hero .eyebrow, .project-hero .lead { color: #dbe9ff; }
+.project-hero h1 { max-width: 940px; font-size: clamp(2.25rem, 5vw, 4.4rem); }
+.project-meta { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 1.3rem; }
+.project-meta .badge { background: rgba(255,255,255,.15); color: white; border: 1px solid rgba(255,255,255,.25); }
+
+.case-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 2.5rem; align-items: start; }
+.case-aside { position: sticky; top: 95px; }
+.case-aside .card { background: var(--surface-alt); }
+.case-content section { padding: 0 0 3.2rem; }
+.case-content h2 { font-size: 2rem; color: var(--brand-900); }
+.case-content img { margin: 1.5rem 0; border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); }
+.architecture-list { display: grid; gap: .75rem; counter-reset: layer; padding: 0; list-style: none; }
+.architecture-list li { counter-increment: layer; position: relative; padding: 1rem 1rem 1rem 3.5rem; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-alt); }
+.architecture-list li::before { content: counter(layer); position: absolute; left: 1rem; top: .9rem; width: 1.65rem; height: 1.65rem; display: grid; place-items: center; border-radius: 50%; background: var(--brand-700); color: white; font-weight: 800; }
+
+.error-page { padding: 10vh 0; text-align: center; }
+
+@media (max-width: 860px) {
+  .hero-grid, .case-layout, .value-grid { grid-template-columns: 1fr; }
+  .case-aside { position: static; }
+}
