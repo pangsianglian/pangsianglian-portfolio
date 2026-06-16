@@ -1,7 +1,7 @@
-# Preschool GSII Auto-Reconciliation
+﻿# Preschool GSII Auto-Reconciliation
 
-**Category:** Reconciliation & Controls  
-**Status:** Active development  
+**Category:** Reconciliation & Controls
+**Status:** Active development
 **Repository:** Private repository
 
 ## Executive summary

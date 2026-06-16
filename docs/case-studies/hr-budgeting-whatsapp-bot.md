@@ -1,7 +1,7 @@
-# HR Budgeting WhatsApp Bot
+﻿# HR Budgeting WhatsApp Bot
 
-**Category:** Workflow Automation  
-**Status:** Active development  
+**Category:** Workflow Automation
+**Status:** Active development
 **Repository:** Private repository
 
 ## Executive summary
@@ -18,7 +18,7 @@ Solution owner, finance process designer and hands-on application developer.
 
 ## Business and delivery value
 
-- Introduces a guided requester → reviewer → HOD → HR Admin workflow.
+- Introduces a guided requester â†’ reviewer â†’ HOD â†’ HR Admin workflow.
 - Creates structured, dashboard-ready budget records with clearer accountability.
 - Uses verification, role-based access and business-unit scope controls to strengthen governance.
 - Reached 133 passing automated tests across the evolving application suite.

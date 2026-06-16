@@ -1,7 +1,7 @@
-# Cashflow & Bank Reconciliation Automation
+﻿# Cashflow & Bank Reconciliation Automation
 
-**Category:** Finance Automation  
-**Status:** Case study ready  
+**Category:** Finance Automation
+**Status:** Case study ready
 **Repository:** Private repository
 
 ## Executive summary
